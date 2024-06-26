@@ -2,7 +2,7 @@ import cv2
 from deepface import DeepFace
 import supervision as sv
 import numpy as np
-from Utils import custom_detections
+from utils import custom_detections
 
 bbox_annotator = sv.BoundingBoxAnnotator()
 label_annotator = sv.LabelAnnotator()

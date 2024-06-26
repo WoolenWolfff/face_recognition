@@ -64,7 +64,7 @@ def main(
                         'miniature': _miniature
                     }
                 
-                labels.append(f'Id #{id} {detections.confidence[i]} {detections.class_id[i]} {ages[i]}')
+                labels.append(f"Id #{id} {'Man' if detections.class_id[i] == 1 else 'Woman'} {ages[i]}")
                 
             annotated_frame = label_annotator.annotate(
                 scene=annotated_frame,
